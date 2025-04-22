@@ -5,7 +5,7 @@ const App = ()  => {
 const [user,setUser] = useState([])
 
 const getUser = () => { 
-  fetch("/api/users")
+  fetch("https://backend-render-tsfd.onrender.com")
   .then(res => res.json())
   .then(json => setUser(json))
 }
